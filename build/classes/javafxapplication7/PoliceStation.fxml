@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.PoliceStationController">
+   <children>
+      <ImageView fitHeight="548.0" fitWidth="825.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/night2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="495.0" fitWidth="450.0" layoutX="215.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/speech-bubble-left-point-square-hi.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ButtonList" layoutX="45.0" layoutY="58.0" mnemonicParsing="false" prefHeight="117.0" prefWidth="129.0" style="-fx-background-radius: 100; -fx-background-color: #FFF2CB;">
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/verification-clipart-clipart-liste-list-256x256-cea9.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Button>
+      <Button fx:id="ButtonAdd" layoutX="672.0" layoutY="68.0" mnemonicParsing="false" prefHeight="117.0" prefWidth="129.0" style="-fx-background-radius: 100; -fx-background-color: #FFF2CB;">
+         <graphic>
+            <ImageView fitHeight="95.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/policeman-png-hd-free-cop-policeman-png-clip-art-image-1899.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Button>
+      <Button fx:id="ButtonRemove" layoutX="672.0" layoutY="318.0" mnemonicParsing="false" prefHeight="117.0" prefWidth="129.0" style="-fx-background-radius: 100; -fx-background-color: #FFF2CB;">
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/policeman-png-hd-free-cop-policeman-png-clip-art-image-1899.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="117.0" fitWidth="76.0" layoutX="650.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/cancellation-clipart-red-x-icon-md.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="280.0" fitWidth="209.0" layoutX="50.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/policeman.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="L1" layoutX="230.0" layoutY="53.0" prefHeight="57.0" prefWidth="426.0" style="-fx-background-color: GREY; -fx-background-radius: 15; -fx-text-fill: blue;" text="  Hey! You are welcome to our the  strangest city" textFill="WHITE">
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="L2" layoutX="223.0" layoutY="110.0" prefHeight="64.0" prefWidth="434.0" style="-fx-background-color: GREY; -fx-background-radius: 15; -fx-text-fill: blue;" text=" It has only 1 police station ! YOU CAN :-get a list of" textFill="WHITE">
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="L3" layoutX="220.0" layoutY="175.0" prefHeight="64.0" prefWidth="440.0" style="-fx-background-color: GREY; -fx-background-radius: 15; -fx-text-fill: blue;" text=" policemen(without any privacy) ;  -join us(please,we" textFill="WHITE">
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="L4" layoutX="223.0" layoutY="240.0" prefHeight="64.0" prefWidth="434.0" style="-fx-background-color: GREY; -fx-background-radius: 15; -fx-text-fill: blue;" text=" need some heroes) ; -write complaint(and we fire her/" textFill="WHITE">
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="L5" layoutX="223.0" layoutY="308.0" prefHeight="57.0" prefWidth="434.0" style="-fx-background-color: GREY; -fx-background-radius: 15; -fx-text-fill: blue;" text="him very easiely); -Or call us 102(to say your problems)" textFill="WHITE">
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="ButtonCall" layoutX="412.0" layoutY="414.0" mnemonicParsing="false" prefHeight="117.0" prefWidth="129.0" style="-fx-background-radius: 100; -fx-background-color: #FFF2CB;">
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/img_56686.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Button>
+      <Label layoutX="45.0" layoutY="247.0" prefHeight="29.0" prefWidth="102.0" style="-fx-background-color: black; -fx-border-radius: 50; -fx-border-color: grey; -fx-background-radius: 50; -fx-text-fill: white;" text="  Chef WIggum" />
+   </children>
+</AnchorPane>

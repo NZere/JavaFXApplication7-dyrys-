@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.RemoveController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="19.0" prefHeight="717.0" prefWidth="792.0" style="-fx-background-color: #191DAA; -fx-background-radius: 20;">
+         <children>
+            <TableView fx:id="tablePerson" layoutX="19.0" layoutY="27.0" prefHeight="361.0" prefWidth="755.0" style="-fx-background-radius: 15;">
+               <columns>
+                  <TableColumn fx:id="idTable" prefWidth="33.0" text="id" />
+                  <TableColumn fx:id="nameTable" prefWidth="79.0" text="Name" />
+                  <TableColumn fx:id="surTable" prefWidth="100.0" text="Surname" />
+                  <TableColumn fx:id="birthTable" prefWidth="105.0" text="Birth" />
+                  <TableColumn fx:id="genTable" minWidth="0.0" prefWidth="83.0" text="Gender" />
+                  <TableColumn fx:id="TasksTable" prefWidth="158.0" text="Tasks">
+                     <columns>
+                        <TableColumn fx:id="HadTaskTable" prefWidth="77.0" text="Had Task?" />
+                        <TableColumn fx:id="CountTable" prefWidth="91.0" text="Count of Tasks" />
+                     </columns>
+                  </TableColumn>
+                  <TableColumn fx:id="PosTable" minWidth="19.0" prefWidth="202.0" text="Position">
+                     <columns>
+                        <TableColumn fx:id="detectTable" prefWidth="60.0" text="Dete" />
+                        <TableColumn fx:id="TcTable" prefWidth="61.0" text="TC" />
+                        <TableColumn fx:id="offTable" minWidth="0.0" prefWidth="62.0" text="off" />
+                     </columns>
+                  </TableColumn>
+               </columns>
+            </TableView>
+            <ImageView fitHeight="290.0" fitWidth="187.0" layoutX="612.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photos/220px-Chief_Wiggum.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="205.0" layoutY="448.0" prefHeight="54.0" prefWidth="407.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-color: Black; -fx-border-radius: 50;" text="  You can not do it like I do every day ... But You can write " />
+            <Button onAction="#deleteRow" fx:id="RemoveButton"  layoutX="295.0" layoutY="568.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #191DAA;">
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="117.0" fitWidth="194.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/paper_and_pen_png_9625.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="168.0" layoutY="502.0" prefHeight="54.0" prefWidth="464.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-color: Black; -fx-border-radius: 50;" text="  a Complaint, Just choose someone who you liked ,click and write" />
+            <Button fx:id="exit" layoutX="19.0" layoutY="573.0" mnemonicParsing="false" prefHeight="117.0" prefWidth="129.0" style="-fx-background-radius: 100; -fx-background-color: #191DAA;">
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="130.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/exit_PNG22.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="149.0" layoutY="388.0" prefHeight="54.0" prefWidth="495.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-border-color: Black; -fx-border-radius: 50;" text="  YAHOOOOO! it's my favorite thing !  I knooow you also want fire them" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

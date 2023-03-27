@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="559.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.AddingController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="559.0" prefWidth="825.0">
+         <children>
+            <AnchorPane layoutX="9.0" layoutY="15.0" prefHeight="529.0" prefWidth="800.0" style="-fx-background-color: #191DAA; -fx-background-radius: 20;">
+               <children>
+                  <Label fx:id="label" layoutX="47.0" layoutY="33.0" prefHeight="54.0" prefWidth="731.0" style="-fx-background-color: GREY; -fx-background-radius: 50;" text="  YYYeeeeeeees!!! To join us please fill the questionnaire" textAlignment="RIGHT" textFill="WHITE" visible="false">
+                     <effect>
+                        <Glow level="0.63" />
+                     </effect>
+                     <font>
+                        <Font name="Century Schoolbook" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="22.0" prefHeight="47.0" prefWidth="703.0" style="-fx-background-color: GREY; -fx-background-radius: 50;" text="      YEESSSSSS!!! TO join us ,please, fill the questionnaire" textFill="WHITE">
+                     <effect>
+                        <Glow level="0.63" />
+                     </effect>
+                     <font>
+                        <Font name="Sitka Small" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="454.0" layoutY="101.0" prefHeight="27.0" prefWidth="191.0" style="-fx-background-color: GREY; -fx-background-radius: 15;" text=" Choose your position" textFill="WHITE">
+                     <effect>
+                        <Glow level="0.63" />
+                     </effect>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="IsMan" layoutX="230.0" layoutY="338.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: White; -fx-background-radius: 50;" text="Man" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </CheckBox>
+                  <CheckBox fx:id="IsWoman" layoutX="367.0" layoutY="338.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="93.0" style="-fx-background-color: White; -fx-background-radius: 50;" text="Woman" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </CheckBox>
+                  <Separator layoutX="346.0" layoutY="79.0" orientation="VERTICAL" prefHeight="227.0" prefWidth="5.0" />
+                  <GridPane layoutX="47.0" layoutY="101.0" prefHeight="139.0" prefWidth="280.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="96.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="172.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="95.0" style="-fx-background-color: GREY; -fx-background-radius: 15;" text="   Name" textFill="WHITE">
+                           <effect>
+                              <Glow level="0.63" />
+                           </effect>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="NameField" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: white; -fx-background-radius: 50;" GridPane.columnIndex="1" />
+                        <Label prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: GREY; -fx-background-radius: 15;" text="  Surname" textFill="WHITE" GridPane.rowIndex="1">
+                           <effect>
+                              <Glow level="0.63" />
+                           </effect>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="SurnameField" style="-fx-background-color: white; -fx-background-radius: 50;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label prefHeight="27.0" prefWidth="93.0" style="-fx-background-color: GREY; -fx-background-radius: 15;" text="  Birth" textFill="WHITE" GridPane.rowIndex="2">
+                           <effect>
+                              <Glow level="0.63" />
+                           </effect>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="BirthField" prefHeight="31.0" prefWidth="170.0" style="-fx-background-color: White;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </DatePicker>
+                     </children>
+                  </GridPane>
+                  <CheckBox fx:id="IsDetect" layoutX="383.0" layoutY="142.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="105.0" style="-fx-background-color: White; -fx-background-radius: 50;" text="Detective" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </CheckBox>
+                  <CheckBox fx:id="IsTC" layoutX="478.0" layoutY="177.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="143.0" style="-fx-background-color: White; -fx-background-radius: 50;" text="Traffic Controler" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </CheckBox>
+                  <CheckBox fx:id="IsOfficer" layoutX="584.0" layoutY="211.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: White; -fx-background-radius: 50;" text="Officer of Police" underline="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </CheckBox>
+                  <Button fx:id="exitButton" layoutY="393.0" mnemonicParsing="false" prefHeight="117.0" prefWidth="129.0" style="-fx-background-radius: 100; -fx-background-color: #191DAA;">
+                     <graphic>
+                        <ImageView fitHeight="68.0" fitWidth="54.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photos/exit_PNG22.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="CROSSHAIR" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="AddButton" layoutX="690.0" layoutY="427.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="75.0" style="-fx-background-radius: 100; -fx-background-color: White;">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photos/Tick.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="CROSSHAIR" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="CROSSHAIR" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="102.0" fitWidth="105.0" layoutX="374.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/woman.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="102.0" fitWidth="105.0" layoutX="223.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photos/man.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+                  <TextArea fx:id="Area" layoutX="484.0" layoutY="269.0" prefHeight="241.0" prefWidth="170.0" visible="false" />
+                  <Button fx:id="InternButton" layoutX="684.0" layoutY="307.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="101.0" style="-fx-background-color: #191DAA; -fx-border-color: grey; -fx-border-radius: 50; -fx-border-width: 5;" visible="false">
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@photos/7d77f9249e.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="LabelSkip" layoutX="677.0" layoutY="277.0" prefHeight="21.0" prefWidth="105.0" style="-fx-background-radius: 50; -fx-background-color: White;" text=" Skip the Intern" visible="false" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
